@@ -1,0 +1,364 @@
+{
+  "note": "DRAFT test households. expected_tips were written from the plain-language intent of each rule. Have a group member who did not write the rules review them before you report any numbers.",
+  "households": [
+    {
+      "id": "H1",
+      "description": "Heavy A/C, otherwise light use",
+      "appliances": [
+        {
+          "name": "Air conditioner",
+          "watts": 1000,
+          "hours": 8,
+          "qty": 1
+        },
+        {
+          "name": "LED bulb",
+          "watts": 9,
+          "hours": 5,
+          "qty": 6
+        },
+        {
+          "name": "Television",
+          "watts": 100,
+          "hours": 5,
+          "qty": 1
+        },
+        {
+          "name": "Refrigerator",
+          "watts": 150,
+          "hours": 24,
+          "qty": 1
+        }
+      ],
+      "expected_tips": [
+        "ac_hours",
+        "ac_share",
+        "fridge_care",
+        "standby_electronics"
+      ]
+    },
+    {
+      "id": "H2",
+      "description": "No A/C; fans and older bulbs",
+      "appliances": [
+        {
+          "name": "Ceiling fan",
+          "watts": 75,
+          "hours": 12,
+          "qty": 3
+        },
+        {
+          "name": "Incandescent bulb",
+          "watts": 60,
+          "hours": 6,
+          "qty": 8
+        },
+        {
+          "name": "Refrigerator",
+          "watts": 150,
+          "hours": 24,
+          "qty": 1
+        },
+        {
+          "name": "Television",
+          "watts": 100,
+          "hours": 4,
+          "qty": 1
+        }
+      ],
+      "expected_tips": [
+        "fridge_care",
+        "led_switch",
+        "lighting_hours",
+        "fan_off_when_empty",
+        "standby_electronics"
+      ]
+    },
+    {
+      "id": "H3",
+      "description": "High usage: long A/C hours, water heater, dryer",
+      "appliances": [
+        {
+          "name": "Air conditioner",
+          "watts": 1200,
+          "hours": 10,
+          "qty": 1
+        },
+        {
+          "name": "Water heater",
+          "watts": 3000,
+          "hours": 1,
+          "qty": 1
+        },
+        {
+          "name": "Dryer",
+          "watts": 2000,
+          "hours": 1,
+          "qty": 1
+        },
+        {
+          "name": "Refrigerator",
+          "watts": 150,
+          "hours": 24,
+          "qty": 1
+        },
+        {
+          "name": "Television",
+          "watts": 100,
+          "hours": 6,
+          "qty": 1
+        }
+      ],
+      "expected_tips": [
+        "ac_hours",
+        "ac_share",
+        "water_heater",
+        "dryer_alternative",
+        "fridge_care",
+        "standby_electronics",
+        "high_total"
+      ]
+    },
+    {
+      "id": "H4",
+      "description": "Small, low-usage apartment",
+      "appliances": [
+        {
+          "name": "LED bulb",
+          "watts": 9,
+          "hours": 4,
+          "qty": 4
+        },
+        {
+          "name": "Refrigerator",
+          "watts": 100,
+          "hours": 24,
+          "qty": 1
+        },
+        {
+          "name": "Laptop",
+          "watts": 60,
+          "hours": 6,
+          "qty": 1
+        },
+        {
+          "name": "Standing fan",
+          "watts": 50,
+          "hours": 6,
+          "qty": 1
+        }
+      ],
+      "expected_tips": [
+        "fridge_care",
+        "standby_electronics"
+      ]
+    },
+    {
+      "id": "H5",
+      "description": "A/C used only 3 hours a day",
+      "appliances": [
+        {
+          "name": "Air conditioner",
+          "watts": 1000,
+          "hours": 3,
+          "qty": 1
+        },
+        {
+          "name": "Refrigerator",
+          "watts": 150,
+          "hours": 24,
+          "qty": 1
+        },
+        {
+          "name": "LED bulb",
+          "watts": 9,
+          "hours": 5,
+          "qty": 5
+        },
+        {
+          "name": "Television",
+          "watts": 100,
+          "hours": 3,
+          "qty": 1
+        }
+      ],
+      "expected_tips": [
+        "ac_share",
+        "fridge_care",
+        "standby_electronics"
+      ]
+    },
+    {
+      "id": "H6",
+      "description": "Two A/C units, 8 hours each",
+      "appliances": [
+        {
+          "name": "Air conditioner",
+          "watts": 1000,
+          "hours": 8,
+          "qty": 2
+        },
+        {
+          "name": "Refrigerator",
+          "watts": 150,
+          "hours": 24,
+          "qty": 1
+        },
+        {
+          "name": "LED bulb",
+          "watts": 9,
+          "hours": 5,
+          "qty": 8
+        },
+        {
+          "name": "Laptop",
+          "watts": 60,
+          "hours": 8,
+          "qty": 2
+        }
+      ],
+      "expected_tips": [
+        "ac_hours",
+        "ac_share",
+        "fridge_care",
+        "standby_electronics",
+        "high_total"
+      ]
+    },
+    {
+      "id": "H7",
+      "description": "Only a fridge and a washing machine",
+      "appliances": [
+        {
+          "name": "Washing machine",
+          "watts": 500,
+          "hours": 1,
+          "qty": 1
+        },
+        {
+          "name": "Refrigerator",
+          "watts": 150,
+          "hours": 24,
+          "qty": 1
+        }
+      ],
+      "expected_tips": [
+        "fridge_care"
+      ]
+    },
+    {
+      "id": "H8",
+      "description": "Lighting-heavy home",
+      "appliances": [
+        {
+          "name": "LED bulb",
+          "watts": 12,
+          "hours": 8,
+          "qty": 10
+        },
+        {
+          "name": "Table lamp",
+          "watts": 40,
+          "hours": 8,
+          "qty": 4
+        },
+        {
+          "name": "Refrigerator",
+          "watts": 150,
+          "hours": 24,
+          "qty": 1
+        },
+        {
+          "name": "Television",
+          "watts": 100,
+          "hours": 4,
+          "qty": 1
+        }
+      ],
+      "expected_tips": [
+        "lighting_hours",
+        "led_switch",
+        "fridge_care",
+        "standby_electronics"
+      ]
+    },
+    {
+      "id": "H9",
+      "description": "Fans, dryer and a game console",
+      "appliances": [
+        {
+          "name": "Standing fan",
+          "watts": 60,
+          "hours": 14,
+          "qty": 2
+        },
+        {
+          "name": "Dryer",
+          "watts": 2000,
+          "hours": 1,
+          "qty": 1
+        },
+        {
+          "name": "Game console",
+          "watts": 150,
+          "hours": 4,
+          "qty": 1
+        },
+        {
+          "name": "Refrigerator",
+          "watts": 150,
+          "hours": 24,
+          "qty": 1
+        }
+      ],
+      "expected_tips": [
+        "fan_off_when_empty",
+        "dryer_alternative",
+        "standby_electronics",
+        "fridge_care"
+      ]
+    },
+    {
+      "id": "H10",
+      "description": "Water heater and two cold appliances, no A/C",
+      "appliances": [
+        {
+          "name": "Water heater",
+          "watts": 3000,
+          "hours": 2,
+          "qty": 1
+        },
+        {
+          "name": "Refrigerator",
+          "watts": 150,
+          "hours": 24,
+          "qty": 1
+        },
+        {
+          "name": "Chest freezer",
+          "watts": 200,
+          "hours": 24,
+          "qty": 1
+        },
+        {
+          "name": "Television",
+          "watts": 100,
+          "hours": 6,
+          "qty": 1
+        },
+        {
+          "name": "Iron",
+          "watts": 1000,
+          "hours": 0.5,
+          "qty": 1
+        }
+      ],
+      "expected_tips": [
+        "water_heater",
+        "fridge_care",
+        "standby_electronics",
+        "high_total"
+      ]
+    }
+  ]
+}

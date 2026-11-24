@@ -1,0 +1,11 @@
+{
+  "name": "Fictional Sample Tariff",
+  "is_fictional": true,
+  "source": "Invented by the project group. Not a real company's rates.",
+  "date": "2026-11-17",
+  "currency": "JMD",
+  "energy_rate": 38.50,
+  "fuel_rate": 21.50,
+  "fixed_charge": 450.00,
+  "tax_rate": 0.15
+}
